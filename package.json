@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "dev": "vite --clearScreen false",
-    "build": "vite build",
+    "build": "prisma generate && vite build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check",
     "check:watch": "svelte-kit sync && svelte-check --watch",

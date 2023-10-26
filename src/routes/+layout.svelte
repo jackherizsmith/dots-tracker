@@ -17,7 +17,7 @@
   />
 </svelte:head>
 
-<Header isAuthenticated={data.isAuthenticated} />
+<Header isAuthenticated={data.isAuthenticated} userName={data.userName} />
 <main class="container">
   <slot />
 </main>

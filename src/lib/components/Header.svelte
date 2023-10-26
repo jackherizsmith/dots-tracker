@@ -2,6 +2,7 @@
   import { invalidateAll } from '$app/navigation';
   import HeaderNavLink from './HeaderNavLink.svelte';
 
+  export let userName: string;
   export let isAuthenticated: boolean;
 
   const logout = async () => {
@@ -13,7 +14,7 @@
 <header>
   <a class="title-link" href="/">
     <h1>Bookstall</h1>
-    <p>Fantasy novels</p>
+    <p>Fantasy novels for {userName}</p>
   </a>
   <hr />
   <nav>
